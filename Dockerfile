@@ -1,7 +1,8 @@
 FROM ghcr.io/actions/actions-runner:latest
 
-RUN apt-get update && apt-get install -y \
+RUN sudo apt-get update \
+    && sudo apt-get install -y --no-install-recommends \
     openssh-client \
     git \
     wget \
-    && rm -rf /var/lib/apt/lists/*
+    && sudo rm -rf /var/lib/apt/lists/*
