@@ -3,6 +3,8 @@ on:
   workflow_dispatch:
   push:
     branches: ['main']
+  pull_request:
+    branches:  ['main']
 
 env:
   REGISTRY: ghcr.io
@@ -33,7 +35,9 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             # set latest tag for default branch
+            type=semver,pattern={{version}},value=2.315.0
             type=raw,value=latest,enable={{is_default_branch}}
+            type=ref,event=pr
 
       - name: Build and push Docker image
         uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
