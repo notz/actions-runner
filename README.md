@@ -7,6 +7,7 @@ This repository build every week a new actions runner image which is a drop-in r
 * openssh-client
 * git
 * wget
+* xz-utils
 
 ## Usage
 

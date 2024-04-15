@@ -6,4 +6,5 @@ RUN sudo apt-get update \
     openssh-client \
     git \
     wget \
+    xz-utils \
     && sudo rm -rf /var/lib/apt/lists/*
