@@ -3,6 +3,7 @@
 This repository build every week a new actions runner image which is a drop-in replacement from default github base image with some basic tools installed.
 
 ## Tools included
+* binutils
 * openssh-client
 * git
 * wget
