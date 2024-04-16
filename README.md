@@ -4,6 +4,7 @@ This repository build every week a new actions runner image which is a drop-in r
 
 ## Tools included
 * binutils
+* curl
 * openssh-client
 * git
 * wget

@@ -3,6 +3,7 @@ FROM ghcr.io/actions/actions-runner:2.315.0
 RUN sudo apt-get update \
     && sudo apt-get install -y --no-install-recommends \
     binutils \
+    curl \
     openssh-client \
     git \
     wget \
