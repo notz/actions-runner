@@ -10,6 +10,7 @@ This repository build every week a new actions runner image which is a drop-in r
 * unzip
 * wget
 * xz-utils
+* Chrome dependencies
 
 ## Usage
 
