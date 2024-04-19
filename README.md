@@ -5,8 +5,9 @@ This repository build every week a new actions runner image which is a drop-in r
 ## Tools included
 * build-essential
 * curl
-* openssh-client
 * git
+* openssh-client
+* unzip
 * wget
 * xz-utils
 

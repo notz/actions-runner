@@ -4,8 +4,9 @@ RUN sudo apt-get update \
     && sudo apt-get install -y --no-install-recommends \
     build-essential \
     curl \
-    openssh-client \
     git \
+    openssh-client \
+    unzip \
     wget \
     xz-utils \
     && sudo rm -rf /var/lib/apt/lists/*
