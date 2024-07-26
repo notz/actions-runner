@@ -1,4 +1,4 @@
-FROM ghcr.io/actions/actions-runner:2.317.0
+FROM ghcr.io/actions/actions-runner:2.318.0
 
 RUN sudo apt-get update \
     && sudo apt-get install -y --no-install-recommends \
