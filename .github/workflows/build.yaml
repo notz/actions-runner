@@ -35,7 +35,7 @@ jobs:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
           tags: |
             # set latest tag for default branch
-            type=semver,pattern={{version}},value=2.318.0
+            type=semver,pattern={{version}},value=2.319.0
             type=raw,value=latest,enable={{is_default_branch}}
             type=ref,event=pr
 
