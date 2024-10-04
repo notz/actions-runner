@@ -3,10 +3,7 @@ FROM ghcr.io/actions/actions-runner:2.320.0
 RUN sudo apt-get update \
     && sudo apt-get install -y --no-install-recommends \
     build-essential \
-    curl \
-    git \
     openssh-client \
-    unzip \
     wget \
     xz-utils \
     # Install chrome dependencies
