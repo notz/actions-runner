@@ -6,6 +6,6 @@ RUN sudo apt-get update \
     openssh-client \
     wget \
     xz-utils \
-    # Install chrome dependencies
-    libgconf-2-4 libatk1.0-0 libatk-bridge2.0-0 libgdk-pixbuf2.0-0 libgtk-3-0 libgbm-dev libnss3-dev libxss-dev libasound2 xvfb fonts-liberation libu2f-udev xdg-utils \
+    # Install chrome dependencies on ubuntu - see https://github.com/browser-actions/setup-chrome/blob/master/src/dependencies.ts \
+    libasound2t64 libatk-bridge2.0-0t64 libatk1.0-0t64 libcairo2 libcups2t64 libdbus-1-3 libexpat1 libgbm1 libglib2.0-0t64 libnss3 libpango-1.0-0 libxcomposite1 libxdamage1 libxfixes3 libxkbcommon0 libxrandr2 \
     && sudo rm -rf /var/lib/apt/lists/*
